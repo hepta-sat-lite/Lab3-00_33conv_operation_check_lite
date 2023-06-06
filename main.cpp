@@ -1,12 +1,12 @@
 #include "mbed.h"
-
-DigitalOut myled(LED1);
-
-int main() {
-  while(1) {
-    myled = 1;
-    wait(0.2);
-    myled = 0;
-    wait(0.2);
-  }
+DigitalOut conv(PA_4);
+int main()
+{
+    while(true){
+        conv = 1;
+        wait_ms(5000);
+        conv = 0;
+        wait_ms(5000);
+    }
+    
 }
